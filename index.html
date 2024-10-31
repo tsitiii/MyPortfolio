@@ -42,13 +42,14 @@
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">portfolio</a></li>
                     <li><a href="#contact">contact</a></li>
-                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
                 </ul>
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i> 
+                <!-- <i class="fa-solid fa-circle-xmark" onclick="closemenu()" id="xmark"></i> -->
+                
             </nav>
 
             <div class="header-text">
-                <p style="color:rgb(191, 214, 214);"> <span>Django </span>developer</p>
+                <p style="color:rgb(214, 191, 212);"> <span>Django </span>developer</p>
                 <h1 style="color: rgb(210, 206, 214);"> Hi, I am <span>Tsiyon </span><br> Gashaw from Ethiopia.</h1>
             </div>
         </div>
@@ -59,9 +60,7 @@
     <div id="about">
         <div class="container">
             <div class="row">
-                <div class="about-col-1">
-                    <img src="images/portfoilio.jpg"  alt="">
-                </div>
+                
 
                 <div class="about-col-2">
                           <h1>About me</h1>
@@ -217,10 +216,28 @@
     var sidebar=document.getElementById("sidebar");
          function openmenu() {
             sidebar.style.right="0";
+            document.getElementById('xmark').style.display = 'block';
+            document.getElementsByTagName('li').style.display
          }
+
+         const menuItems = document.querySelectorAll('#sidebar a');
+                menuItems.forEach(item => {
+                    item.addEventListener('click', () => {
+                        closemenu();
+                        scrollToSection(item.getAttribute('href'));
+                    });
+                });
+
+            function scrollToSection(sectionId) {
+                const section = document.querySelector(sectionId);
+                if (section) {
+                    section.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
 
          function closemenu() {
             sidebar.style.right="-200px";
+            document.getElementById('xmark').style.display = 'none'; 
          }
 </script>
 

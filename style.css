@@ -370,7 +370,7 @@ form input, form textarea{
     color: #ff004f;
 }
 
-nav .fa-solid, .fa-regular{
+nav .fa-solid{
     display: none;
 }
 /*  for small devices */
@@ -388,13 +388,13 @@ nav .fa-solid, .fa-regular{
         font-size: 30px;
     }
 
-    nav .fa-solid, .fa-regular{
+    nav .fa-solid{
         display: block;
         font-size: 25px;
     }
     nav ul{
-        position: fixed;
         background: #ff004f;
+        position: fixed;
         top: 0;
         right: -200px;
         width: 200px;
@@ -407,11 +407,12 @@ nav .fa-solid, .fa-regular{
     display:  block;
     margin: 25px;
    }
-   nav ul .fa-solid{
+   nav #xmark{
     position: absolute;
     top: 25px;
-    left: 25px;
+    left: 10px;
     cursor: pointer;
+    font-size: xx-large;
    }
    .about-col-2 h1{
     font-size: 30px;
