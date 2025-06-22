@@ -57,7 +57,8 @@
                 <div class="nav-links" data-aos="fade-down">
                     <a href="#about">About</a>
                     <a href="#services">Services</a>
-                    <a href="#portfolio">Portfolio</a>
+                    <a href="#portfolio">Web Apps</a>
+                    <a href="#mobile-apps">Mobile Apps</a>
                     <a href="#contact">Contact</a>
                 </div>
             </nav>
@@ -237,8 +238,8 @@
                         <p>A digital solution for managing tenant data securely and efficiently, eliminating paper-based
                             processes.</p>
                         <div class="portfolio-links">
-                            <a href="https://github.com/tsitiii/Backend_Tenant_Tenure_System.git" class="portfolio-link" target="_blank"
-                                title="View Source Code">
+                            <a href="https://github.com/tsitiii/Backend_Tenant_Tenure_System.git" class="portfolio-link"
+                                target="_blank" title="View Source Code">
                                 <i class="fab fa-github"></i>
                             </a>
                             <a href="https://front-end-tenants.vercel.app/" class="portfolio-link" target="_blank"
@@ -275,8 +276,8 @@
                         <p>A digital library platform enabling students to discover and borrow books across various
                             genres.</p>
                         <div class="portfolio-links">
-                            <a href="https://github.com/tsitiii/GDSC_Library_management_project.git" class="portfolio-link" target="_blank"
-                                title="View Source Code">
+                            <a href="https://github.com/tsitiii/GDSC_Library_management_project.git"
+                                class="portfolio-link" target="_blank" title="View Source Code">
                                 <i class="fab fa-github"></i>
                             </a>
                             <a href="https://library-management-system-anqa.onrender.com" class="portfolio-link"
@@ -304,9 +305,85 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="500">
+                    <img src="images/task manager.jpg" alt="Task Management App">
+                    <div class="portfolio-overlay">
+                        <h3>Task Management App</h3>
+                        <p>A user-friendly application to organize tasks, set deadlines, and track progress efficiently.
+                        </p>
+                        <div class="portfolio-links">
+                            <a href="https://github.com/tsitiii/Frontend_kuraz_assessment.git" class="portfolio-link"
+                                target="_blank" title="View Source Code">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://frontend-kuraz-assessment.vercel.app/" class="portfolio-link"
+                                target="_blank" title="Visit Live Site">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="portfolio-cta" data-aos="fade-up">
                 <a href="#contact" class="btn">See More Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile Apps Section -->
+    <section id="mobile-apps">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>My Mobile Apps</h2>
+                <div class="section-line"></div>
+                <h3 class="portfolio-subtitle">Projects built for mobile devices.</h3>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="100">
+                    <img src="images/visit addus.jpg" alt="Visit Addis App">
+                    <div class="portfolio-overlay">
+                        <h3>Visit Addis</h3>
+                        <p>Your ultimate guide to exploring the vibrant city of Addis Ababa. Discover top attractions,
+                            restaurants, and events.</p>
+                        <div class="portfolio-links">
+                            <a href="https://github.com/Visit-Addis/Visit_Addis_frontend_app" class="portfolio-link"
+                                target="_blank" title="View on GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="200">
+                    <img src="images/arhibu.jpg" alt="Arhibu App">
+                    <div class="portfolio-overlay">
+                        <h3>Arhibu - Roommate Finder</h3>
+                        <p>Connects house owners and seekers, making it easy to find the perfect roommate or room to
+                            share.</p>
+                        <div class="portfolio-links">
+                            <a href="https://github.com/Gebeyaa/Roomate_Finder_mobile" class="portfolio-link"
+                                target="_blank" title="View on GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="300">
+                    <img src="images/ecommerce.jpg" alt="E-commerce App">
+                    <div class="portfolio-overlay">
+                        <h3>E-commerce Fashion App</h3>
+                        <p>A mobile shopping app for clothing, allowing users to browse and purchase a variety of
+                            fashion items.</p>
+                        <div class="portfolio-links">
+                            <a href="https://github.com/tsitiii/E-Commerce-Clothing-Store" class="portfolio-link"
+                                target="_blank" title="View on GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -334,21 +411,25 @@
                         <a href="https://www.linkedin.com/in/tsiyon-gashaw-0b12b92a0" target="_blank"><i
                                 class="fa-brands fa-linkedin"></i></a>
                     </div>
-                    <a href="images/Tsiyon_Gashaw_Resume.pdf" download class="btn btn2">Download CV</a>
+                    <a href="images/Tsiyon-Gashaw-latest.pdf" download class="btn btn2">Download CV</a>
                 </div>
                 <div class="contact-form" data-aos="fade-left">
-                    <form name="submit-to-google-sheet">
+                    <form id="contact-form" action="https://formspree.io/f/xvgrwgrn" method="POST">
                         <div class="form-group">
-                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="text" name="name" placeholder="Your Name" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
                         </div>
                         <div class="form-group">
-                            <textarea name="Message" placeholder="Your Message" required></textarea>
+                            <textarea name="message" placeholder="Your Message" required></textarea>
                         </div>
                         <button type="submit" class="btn">Send Message</button>
                     </form>
+                    <div id="thank-you-message"
+                        style="display:none; color:var(--primary-color); font-size:1.2rem; margin-top:20px; text-align:center;">
+                        Thank you for reaching out! I will get back to you soon.
+                    </div>
                 </div>
             </div>
         </div>
@@ -358,7 +439,6 @@
         <p>© 2024 Tsiyon Gashaw. Made with <i class="fa-solid fa-heart"></i> and <i class="fa-solid fa-code"></i></p>
     </footer>
 
-    <!-- Scroll to Top Button -->
     <div class="scroll-top">
         <i class="fas fa-arrow-up"></i>
     </div>
@@ -405,32 +485,6 @@
             event.currentTarget.classList.add("active-links");
             document.getElementById(tabname).classList.add("active-tab");
         }
-
-        // Form submission
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbxT1tLqr0K-54_IANP-vlIog--6t6DtAXGURR97SwyqsLZPsJW8RKwHdCw8gwezEJsiUQ/exec';
-        const form = document.forms['submit-to-google-sheet'];
-
-        form.addEventListener('submit', e => {
-            e.preventDefault();
-            const submitBtn = form.querySelector('button[type="submit"]');
-            submitBtn.innerHTML = 'Sending...';
-            submitBtn.disabled = true;
-
-            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => {
-                    submitBtn.innerHTML = 'Message Sent!';
-                    form.reset();
-                    setTimeout(() => {
-                        submitBtn.innerHTML = 'Submit';
-                        submitBtn.disabled = false;
-                    }, 3000);
-                })
-                .catch(error => {
-                    submitBtn.innerHTML = 'Error! Try Again';
-                    submitBtn.disabled = false;
-                    console.error('Error!', error.message);
-                });
-        });
 
         // Smooth scroll with offset for fixed header
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -529,6 +583,34 @@
                 top: 0,
                 behavior: 'smooth'
             });
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.getElementById('contact-form');
+            const thankYou = document.getElementById('thank-you-message');
+            if (form) {
+                form.addEventListener('submit', function (e) {
+                    e.preventDefault();
+                    const data = new FormData(form);
+                    fetch(form.action, {
+                        method: 'POST',
+                        body: data,
+                        headers: { 'Accept': 'application/json' }
+                    }).then(response => {
+                        if (response.ok) {
+                            form.reset();
+                            form.style.display = 'none';
+                            thankYou.style.display = 'block';
+                        } else {
+                            thankYou.innerHTML = 'Oops! There was a problem. Please try again later.';
+                            thankYou.style.display = 'block';
+                        }
+                    }).catch(() => {
+                        thankYou.innerHTML = 'Oops! There was a problem. Please try again later.';
+                        thankYou.style.display = 'block';
+                    });
+                });
+            }
         });
     </script>
 
