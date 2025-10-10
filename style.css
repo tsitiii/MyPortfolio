@@ -60,6 +60,8 @@
     --primary-color: #ff4d6d;
     --secondary-color: #ff8fa3;
     --accent-color: #ffb3c1;
+    --services-border: #ffd6e0;
+    --services-icon: #ff4d6d;
     --bg-color: #0a0a0a;
     --card-bg: #141414;
     --text-primary: #ffffff;
@@ -485,8 +487,8 @@ section {
     border-radius: 15px;
     text-align: center;
     transition: all 0.3s ease;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
+    border: 2px solid var(--services-border);
+    box-shadow: 0 5px 15px rgba(34, 197, 94, 0.10);
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -496,21 +498,21 @@ section {
 
 .service-card:hover {
     transform: translateY(-10px);
-    background: rgba(255, 255, 255, 0.1);
-    border-color: var(--accent-color);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.10);
+    border-color: var(--services-border);
+    box-shadow: 0 10px 30px rgba(34, 197, 94, 0.18);
 }
 
 .service-card i {
     font-size: 2.5rem;
-    color: var(--accent-color);
+    color: var(--services-icon);
     margin-bottom: 10px;
     transition: all 0.3s ease;
 }
 
 .service-card:hover i {
     transform: scale(1.1);
-    color: var(--gradient-end);
+    color: var(--primary-color);
 }
 
 .service-card h3 {
@@ -719,28 +721,49 @@ section {
 #mobile-apps .portfolio-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    max-width: 1000px;
-    margin: 0 auto;
+    gap: 40px;
+    width: 100%;
+    max-width: none;
+    margin: 0;
 }
 
 #mobile-apps .portfolio-item {
-    aspect-ratio: 10 / 16;
-    /* Less tall aspect ratio */
+    aspect-ratio: 16 / 10;
     overflow: hidden;
     position: relative;
     border-radius: var(--border-radius);
     box-shadow: var(--card-shadow);
-    background: #111;
-    /* Add a background for letterboxing */
+    background: var(--card-bg);
 }
 
 #mobile-apps .portfolio-item img {
     width: 100%;
-    height: 100%;
+    height: 520px;
     object-fit: contain;
-    /* Ensures the whole image is visible without cropping */
+    background: #fff;
+    border-bottom: 1px solid var(--border-color);
+    border-radius: 18px 18px 0 0;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.10);
     transition: var(--transition);
+}
+@media only screen and (max-width: 768px) {
+    #mobile-apps .portfolio-item img {
+        height: 360px;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    #mobile-apps .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media only screen and (max-width: 768px) {
+    #mobile-apps .portfolio-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+    #mobile-apps .portfolio-item img {
+        height: 220px;
+    }
 }
 
 #mobile-apps .portfolio-links a {
