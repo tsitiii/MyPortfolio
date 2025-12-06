@@ -1,733 +1,972 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Tsiyon Gashaw - Django Developer Portfolio showcasing web development, mobile apps, and API design expertise">
-    <meta name="theme-color" content="#2563eb">
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/about.css">
-    <link rel="stylesheet" href="css/services.css">
-    <link rel="stylesheet" href="css/portfolio.css">
-    <link rel="stylesheet" href="css/mobile-apps.css">
-    <link rel="stylesheet" href="css/contact.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/animations.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-    <script src="https://kit.fontawesome.com/f43b3170cf.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Tsiyon Gashaw - Django Developer Portfolio showcasing web development, mobile apps, and API design expertise"
+    />
+    <meta name="theme-color" content="#2563eb" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/services.css" />
+    <link rel="stylesheet" href="css/portfolio.css" />
+    <link rel="stylesheet" href="css/mobile-apps.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/f43b3170cf.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
     <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
 
-        function opentab(tabname) {
-            for (const tablink of tablinks) {
-                tablink.classList.remove("active-links");
-            }
-
-            for (const tabcontent of tabcontents) {
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-links");
-            document.getElementById(tabname).classList.add("active-tab");
+      function opentab(tabname) {
+        for (const tablink of tablinks) {
+          tablink.classList.remove("active-links");
         }
 
-
-        function popup() {
-            alert("your response has been recorded!");
-            let data = document.getElementById("formm");
-            data.preventDefault();
+        for (const tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
         }
+        event.currentTarget.classList.add("active-links");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
 
-
+      function popup() {
+        alert("your response has been recorded!");
+        let data = document.getElementById("formm");
+        data.preventDefault();
+      }
     </script>
     <title>Tsiyon Gashaw - Django Developer</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Loading Animation -->
     <div class="loading">
-        <div class="loading-spinner"></div>
+      <div class="loading-spinner"></div>
     </div>
 
     <!-- Header Section -->
     <section id="header">
-        <div class="container">
-            <nav id="navbar">
-                <img src="images/protfolio.jpg" alt="Tsiyon Gashaw" class="logo" data-aos="fade-down">
-                <div class="menu-btn">
-                    <i class="fas fa-bars"></i>
-                </div>
-                <div class="nav-links" data-aos="fade-down">
-                    <a href="#about">About</a>
-                    <a href="#services">Services</a>
-                    <a href="#portfolio">Web Apps</a>
-                    <a href="#mobile-apps">Mobile Apps</a>
-                    <a href="#contact">Contact</a>
-                </div>
-            </nav>
+      <div class="container">
+        <nav id="navbar">
+          <img
+            src="images/protfolio.jpg"
+            alt="Tsiyon Gashaw"
+            class="logo"
+            data-aos="fade-down"
+          />
+          <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+          </div>
+          <div class="nav-links" data-aos="fade-down">
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Web Apps</a>
+            <a href="#mobile-apps">Mobile Apps</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </nav>
 
-            <div class="header-text" data-aos="fade-up">
-                <div class="typing-container">
-                    <p class="static-text">Hi, I am</p>
-                    <h1 class="typing-text"></h1>
-                </div>
-                <div class="tech-stack">
-                    <span class="tech-item">I build mobile apps</span>
-                    <span class="tech-item">I develop backends</span>
-                    <span class="tech-item">I create frontends</span>
-                    <span class="tech-item">I design APIs</span>
-                </div>
-                <a href="#contact" class="btn">Get in Touch</a>
+        <div class="header-content">
+          <div class="header-text" data-aos="fade-right">
+            <div class="hero-greeting">
+              <h1 class="hero-main-text">Hi, I'm</h1>
+              <h1 class="hero-name-text">
+                <span class="name-highlight"
+                  ><span class="name-yellow">Tsiyon</span>
+                  <span class="name-green">Gashaw</span
+                  ><span class="snake-decoration">🐍</span></span
+                >
+              </h1>
             </div>
+            <div class="hero-dynamic-text">
+              <span class="dynamic-text-wrapper">
+                <span class="dynamic-text" id="dynamicText"
+                  >I build backends</span
+                >
+              </span>
+            </div>
+            <div class="hero-description">
+              <p>
+                Django Developer & Mobile App Developer passionate about
+                creating scalable solutions
+              </p>
+            </div>
+            <a href="#contact" class="btn">Get in Touch</a>
+          </div>
+          <div class="header-visuals" data-aos="fade-left">
+            <div class="tech-visual-container">
+              <div class="tech-visual-item python-visual">
+                <i class="fa-brands fa-python"></i>
+                <div class="visual-glow"></div>
+              </div>
+              <div class="tech-visual-item django-visual">
+                <img src="images/image.png" alt="Django" class="django-image" />
+                <div class="visual-glow"></div>
+              </div>
+              <div class="tech-visual-item flutter-visual">
+                <i class="fa-brands fa-flutter"></i>
+                <div class="visual-glow"></div>
+              </div>
+              <div class="tech-visual-item api-visual">
+                <i class="fa-solid fa-cloud"></i>
+                <div class="visual-glow"></div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- About Section -->
     <section id="about">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <h2>About Me</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="about-content">
-                <div class="about-left" data-aos="fade-right">
-                    <div class="about-card">
-                        <div class="about-icon">
-                            <i class="fas fa-code"></i>
-                        </div>
-                        <h3>Django Developer</h3>
-                        <p>Passionate about building robust web applications and creating efficient solutions using
-                            Django framework.</p>
-                    </div>
-                    <div class="about-card">
-                        <div class="about-icon">
-                            <i class="fas fa-mobile-alt"></i>
-                        </div>
-                        <h3>Mobile Developer</h3>
-                        <p>Experienced in developing cross-platform mobile applications that deliver exceptional user
-                            experiences.</p>
-                    </div>
-                </div>
-                <div class="about-right" data-aos="fade-left">
-                    <div class="about-main">
-                        <h3>My Journey</h3>
-                        <p class="about-description">
-                            I am a passionate developer with expertise in Django and mobile app development.
-                            My journey in software development has equipped me with skills in both frontend and backend
-                            development,
-                            allowing me to create comprehensive solutions that meet modern web standards.
-                        </p>
-
-                        <div class="about-tabs">
-                            <div class="tab-titles">
-                                <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
-                                <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                                <p class="tab-links" onclick="opentab('education')">Education</p>
-                            </div>
-                            <div class="tab-contents active-tab" id="skills">
-                                <ul>
-                                    <li>
-                                        <span>Django Development</span>
-                                        <p>Building scalable backend systems and RESTful APIs</p>
-                                    </li>
-                                    <li>
-                                        <span>Flutter & Mobile App Development</span>
-                                        <p>Developing cross-platform mobile apps with clean architecture, TDD, and
-                                            third-party API integration</p>
-                                    </li>
-                                    <li>
-                                        <span>API Integration</span>
-                                        <p>Integrating and securing third-party APIs for web and mobile platforms</p>
-                                    </li>
-                                    <li>
-                                        <span>Database Management & Optimization</span>
-                                        <p>Efficient database design, query optimization, caching, and indexing using
-                                            PostgreSQL and Redis</p>
-                                    </li>
-                                    <li>
-                                        <span>Web Development</span>
-                                        <p>Full-stack development with modern frameworks</p>
-                                    </li>
-                                    <li>
-                                        <span>API Design</span>
-                                        <p>Creating efficient and secure RESTful APIs</p>
-                                    </li>
-                                    <li>
-                                        <span>DevOps & Containerization</span>
-                                        <p>Deploying and managing applications using Docker and CI/CD pipelines</p>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="tab-contents" id="experience">
-                                <ul>
-                                    <li>
-                                        <span>2025</span>
-                                        <p>Mobile App Developer at Eskalate - Applied clean architecture principles,
-                                            test-driven development, and integrated various third-party APIs using
-                                            Flutter.</p>
-                                    </li>
-                                    <li>
-                                        <span>2025</span>
-                                        <p>Mobile App Developer at Gebeya - Integrated third-party APIs including Google
-                                            ML Kit for image OCR extraction, speech-to-text, and text-to-speech
-                                            conversion, with extensive API integration.</p>
-                                    </li>
-                                    <li>
-                                        <span>2025</span>
-                                        <p>Backend Developer at Ethioware - Built scalable APIs using Django DRF and
-                                            advanced tools like Celery, DRF Spectacular, Docker, and Redis.</p>
-                                    </li>
-                                    <li>
-                                        <span>2025</span>
-                                        <p>Backend Developer at AfriDATAi - Developed efficient backend systems with
-                                            Django DRF and PostgreSQL, focusing on query optimization, caching,
-                                            indexing, and API security.</p>
-                                    </li>
-                                    <li>
-                                        <span>2024 - Present</span>
-                                        <p>Lead Developer - Collaborative Website Project</p>
-                                    </li>
-                                    <li>
-                                        <span>2024</span>
-                                        <p>Library Management System Development</p>
-                                    </li>
-                                    <li>
-                                        <span>2023 - 2024</span>
-                                        <p>Team Lead at GDSC Django</p>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="tab-contents" id="education">
-                                <ul>
-                                    <li>
-                                        <span>A2SV (African to Silicon Valley)</span>
-                                        <p>Deep dive into data structures and algorithms</p>
-                                    </li>
-                                    <li>
-                                        <span>Advanced Flutter</span>
-                                        <p>Udemy.com - Advanced Flutter Development</p>
-                                    </li>
-                                    <li>
-                                        <span>Flutter Beginner & Intermediate</span>
-                                        <p>A2SV and GDG on Campus - Hands-on training in Flutter fundamentals and
-                                            intermediate concepts</p>
-                                    </li>
-                                    <li>
-                                        <span>Python Development</span>
-                                        <p>Udemy.com - Advanced Python Programming</p>
-                                    </li>
-                                    <li>
-                                        <span>Django Framework</span>
-                                        <p>GDSC Study Sessions - Professional Training</p>
-                                    </li>
-                                    <li>
-                                        <span>Web Development</span>
-                                        <p>AASTU - Computer Science</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2>About Me</h2>
+          <div class="section-line"></div>
         </div>
+        <div class="about-content">
+          <div class="about-left" data-aos="fade-right">
+            <div class="about-card">
+              <div class="about-icon">
+                <i class="fas fa-code"></i>
+              </div>
+              <h3>Django Developer</h3>
+              <p>
+                Passionate about building robust web applications and creating
+                efficient solutions using Django framework.
+              </p>
+            </div>
+            <div class="about-card">
+              <div class="about-icon">
+                <i class="fas fa-mobile-alt"></i>
+              </div>
+              <h3>Mobile Developer</h3>
+              <p>
+                Experienced in developing cross-platform mobile applications
+                that deliver exceptional user experiences.
+              </p>
+            </div>
+          </div>
+          <div class="about-right" data-aos="fade-left">
+            <div class="about-main">
+              <h3>My Journey</h3>
+              <p class="about-description">
+                I am a passionate developer with expertise in Django and mobile
+                app development. My journey in software development has equipped
+                me with skills in both frontend and backend development,
+                allowing me to create comprehensive solutions that meet modern
+                web standards.
+              </p>
+
+              <div class="about-tabs">
+                <div class="tab-titles">
+                  <p class="tab-links active-links" onclick="opentab('skills')">
+                    Skills
+                  </p>
+                  <p class="tab-links" onclick="opentab('experience')">
+                    Experience
+                  </p>
+                  <p class="tab-links" onclick="opentab('education')">
+                    Education
+                  </p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                  <ul>
+                    <li>
+                      <span>Django Development</span>
+                      <p>Building scalable backend systems and RESTful APIs</p>
+                    </li>
+                    <li>
+                      <span>Flutter & Mobile App Development</span>
+                      <p>
+                        Developing cross-platform mobile apps with clean
+                        architecture, TDD, and third-party API integration
+                      </p>
+                    </li>
+                    <li>
+                      <span>API Integration</span>
+                      <p>
+                        Integrating and securing third-party APIs for web and
+                        mobile platforms
+                      </p>
+                    </li>
+                    <li>
+                      <span>Database Management & Optimization</span>
+                      <p>
+                        Efficient database design, query optimization, caching,
+                        and indexing using PostgreSQL and Redis
+                      </p>
+                    </li>
+                    <li>
+                      <span>Web Development</span>
+                      <p>Full-stack development with modern frameworks</p>
+                    </li>
+                    <li>
+                      <span>API Design</span>
+                      <p>Creating efficient and secure RESTful APIs</p>
+                    </li>
+                    <li>
+                      <span>DevOps & Containerization</span>
+                      <p>
+                        Deploying and managing applications using Docker and
+                        CI/CD pipelines
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                  <ul>
+                    <li>
+                      <span>2025</span>
+                      <p>
+                        Mobile App Developer at Eskalate - Applied clean
+                        architecture principles, test-driven development, and
+                        integrated various third-party APIs using Flutter.
+                      </p>
+                    </li>
+                    <li>
+                      <span>2025</span>
+                      <p>
+                        Mobile App Developer at Gebeya - Integrated third-party
+                        APIs including Google ML Kit for image OCR extraction,
+                        speech-to-text, and text-to-speech conversion, with
+                        extensive API integration.
+                      </p>
+                    </li>
+                    <li>
+                      <span>2025</span>
+                      <p>
+                        Backend Developer at Ethioware - Built scalable APIs
+                        using Django DRF and advanced tools like Celery, DRF
+                        Spectacular, Docker, and Redis.
+                      </p>
+                    </li>
+                    <li>
+                      <span>2025</span>
+                      <p>
+                        Backend Developer at AfriDATAi - Developed efficient
+                        backend systems with Django DRF and PostgreSQL, focusing
+                        on query optimization, caching, indexing, and API
+                        security.
+                      </p>
+                    </li>
+                    <li>
+                      <span>2024 - Present</span>
+                      <p>Lead Developer - Collaborative Website Project</p>
+                    </li>
+                    <li>
+                      <span>2024</span>
+                      <p>Library Management System Development</p>
+                    </li>
+                    <li>
+                      <span>2023 - 2024</span>
+                      <p>Team Lead at GDSC Django</p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                  <ul>
+                    <li>
+                      <span>A2SV (African to Silicon Valley)</span>
+                      <p>Deep dive into data structures and algorithms</p>
+                    </li>
+                    <li>
+                      <span>Advanced Flutter</span>
+                      <p>Udemy.com - Advanced Flutter Development</p>
+                    </li>
+                    <li>
+                      <span>Flutter Beginner & Intermediate</span>
+                      <p>
+                        A2SV and GDG on Campus - Hands-on training in Flutter
+                        fundamentals and intermediate concepts
+                      </p>
+                    </li>
+                    <li>
+                      <span>Python Development</span>
+                      <p>Udemy.com - Advanced Python Programming</p>
+                    </li>
+                    <li>
+                      <span>Django Framework</span>
+                      <p>GDSC Study Sessions - Professional Training</p>
+                    </li>
+                    <li>
+                      <span>Web Development</span>
+                      <p>AASTU - Computer Science</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Services Section -->
     <section id="services">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <h2>My Services</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="services-grid">
-                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-                    <i class="fa-brands fa-python"></i>
-                    <h3>Web Applications</h3>
-                    <p>Full-stack web development using Django framework, combining robust backend systems with modern
-                        frontend technologies</p>
-                </div>
-                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
-                    <i class="fa-solid fa-mobile-screen-button"></i>
-                    <h3>Mobile Applications</h3>
-                    <p>Native and cross-platform mobile apps that deliver exceptional user experiences</p>
-                </div>
-                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
-                    <i class="fa-solid fa-code"></i>
-                    <h3>RESTful APIs</h3>
-                    <p>Scalable and secure API development for your applications</p>
-                </div>
-                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
-                    <i class="fa-solid fa-palette"></i>
-                    <h3>UI/UX Design</h3>
-                    <p>User-centered design that enhances user experience</p>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2>My Services</h2>
+          <div class="section-line"></div>
         </div>
+        <div class="services-grid">
+          <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+            <i class="fa-brands fa-python"></i>
+            <h3>Web Applications</h3>
+            <p>
+              Full-stack web development using Django framework, combining
+              robust backend systems with modern frontend technologies
+            </p>
+          </div>
+          <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+            <h3>Mobile Applications</h3>
+            <p>
+              Native and cross-platform mobile apps that deliver exceptional
+              user experiences
+            </p>
+          </div>
+          <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+            <i class="fa-solid fa-code"></i>
+            <h3>RESTful APIs</h3>
+            <p>Scalable and secure API development for your applications</p>
+          </div>
+          <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+            <i class="fa-solid fa-palette"></i>
+            <h3>UI/UX Design</h3>
+            <p>User-centered design that enhances user experience</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Portfolio Section -->
     <section id="portfolio">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <h2>My Work</h2>
-                <div class="section-line"></div>
-                <h3 class="portfolio-subtitle">Hover over my projects to see the details</h3>
-            </div>
-
-            <div class="portfolio-grid">
-
-                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="100">
-                    <img src="images/kefta.jpg" alt="Ethiopian Tenure and Tenant Management System">
-                    <div class="portfolio-overlay">
-                        <h3>Ethiopian Tenure and Tenant Management System</h3>
-                        <p>A digital solution for managing tenant data securely and efficiently, eliminating paper-based
-                            processes.</p>
-                        <div class="portfolio-links">
-                            <a href="https://github.com/tsitiii/Backend_Tenant_Tenure_System.git" class="portfolio-link"
-                                target="_blank" title="View Source Code">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="https://front-end-tenants.vercel.app/" class="portfolio-link" target="_blank"
-                                title="Visit Live Site">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="500">
-                    <img src="images/eds.jpg" alt="Task Management App">
-                    <div class="portfolio-overlay">
-                        <h3>EDS Expert Database System</h3>
-                        <p>Engineered a production-grade Expert Registration Database System using Django and DRF,
-                            ensuring smooth performance for 200+ expert profiles through database indexing.
-                        </p>
-                        <div class="portfolio-links">
-                            <a href="" class="portfolio-link" target="_blank" title="View Source Code">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="https://main.d3ngcwtu4hkapw.amplifyapp.com/" class="portfolio-link" target="_blank"
-                                title="Visit Live Site">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="100">
-                    <img src="images/alx.jpg" alt="Ethiopian Tenure and Tenant Management System">
-                    <div class="portfolio-overlay">
-                        <h3>Alx Recruiment Tracker</h3>
-                        <p>This is the Recruitment Tracker Portal, a gateway to managing recruitment campaigns and
-                            tracking referral performance.</p>
-                        <div class="portfolio-links">
-                            <a href="#" class="portfolio-link" target="_blank" title="View Source Code">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="https://alx-rt.netlify.app/login/" class="portfolio-link" target="_blank"
-                                title="Visit Live Site">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="200">
-                    <img src="images/uni.jpg" alt="UniGram">
-                    <div class="portfolio-overlay">
-                        <h3>UniGram</h3>
-                        <p>A collaborative platform for Ethiopian university students to connect and support each other
-                            academically.</p>
-                        <div class="portfolio-links">
-                            <a href="https://github.com/tsitiii/unigram.git" class="portfolio-link" target="_blank"
-                                title="View Source Code">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="https://unigram-et.vercel.app/" class="portfolio-link" target="_blank"
-                                title="Visit Live Site">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="300">
-                    <img src="images/library.jpg" alt="Library Management System">
-                    <div class="portfolio-overlay">
-                        <h3>Library Management System</h3>
-                        <p>A digital library platform enabling students to discover and borrow books across various
-                            genres.</p>
-                        <div class="portfolio-links">
-                            <a href="https://github.com/tsitiii/GDSC_Library_management_project.git"
-                                class="portfolio-link" target="_blank" title="View Source Code">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="https://library-management-system-anqa.onrender.com" class="portfolio-link"
-                                target="_blank" title="Visit Live Site">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="400">
-                    <img src="images/soft.jpg" alt="Pi Parents Portal">
-                    <div class="portfolio-overlay">
-                        <h3>Pi Parents Portal</h3>
-                        <p>A dedicated portal helping Ethiopian parents monitor and manage their children's academic
-                            progress.</p>
-                        <div class="portfolio-links">
-                            <a href="https://github.com/Softnet-PiParents-Org/Pi_Backend" class="portfolio-link"
-                                target="_blank" title="View Source Code">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" class="portfolio-link" target="_blank" title="Visit Live Site">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="portfolio-cta" data-aos="fade-up">
-                <a href="#contact" class="btn">See More Projects</a>
-            </div>
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2>My Work</h2>
+          <div class="section-line"></div>
+          <h3 class="portfolio-subtitle">
+            Hover over my projects to see the details
+          </h3>
         </div>
+
+        <div class="portfolio-grid">
+          <div class="portfolio-item" data-aos="fade-up" data-aos-delay="100">
+            <img
+              src="images/kefta.jpg"
+              alt="Ethiopian Tenure and Tenant Management System"
+            />
+            <div class="portfolio-overlay">
+              <h3>Ethiopian Tenure and Tenant Management System</h3>
+              <p>
+                A digital solution for managing tenant data securely and
+                efficiently, eliminating paper-based processes.
+              </p>
+              <div class="portfolio-links">
+                <a
+                  href="https://github.com/tsitiii/Backend_Tenant_Tenure_System.git"
+                  class="portfolio-link"
+                  target="_blank"
+                  title="View Source Code"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+                <a
+                  href="https://front-end-tenants.vercel.app/"
+                  class="portfolio-link"
+                  target="_blank"
+                  title="Visit Live Site"
+                >
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item" data-aos="fade-up" data-aos-delay="500">
+            <img src="images/eds.jpg" alt="Task Management App" />
+            <div class="portfolio-overlay">
+              <h3>EDS Expert Database System</h3>
+              <p>
+                Engineered a production-grade Expert Registration Database
+                System using Django and DRF, ensuring smooth performance for
+                200+ expert profiles through database indexing.
+              </p>
+              <div class="portfolio-links">
+                <a
+                  href=""
+                  class="portfolio-link"
+                  target="_blank"
+                  title="View Source Code"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+                <a
+                  href="https://main.d3ngcwtu4hkapw.amplifyapp.com/"
+                  class="portfolio-link"
+                  target="_blank"
+                  title="Visit Live Site"
+                >
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item" data-aos="fade-up" data-aos-delay="100">
+            <img
+              src="images/alx.jpg"
+              alt="Ethiopian Tenure and Tenant Management System"
+            />
+            <div class="portfolio-overlay">
+              <h3>Alx Recruiment Tracker</h3>
+              <p>
+                This is the Recruitment Tracker Portal, a gateway to managing
+                recruitment campaigns and tracking referral performance.
+              </p>
+              <div class="portfolio-links">
+                <a
+                  href="#"
+                  class="portfolio-link"
+                  target="_blank"
+                  title="View Source Code"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+                <a
+                  href="https://alx-rt.netlify.app/login/"
+                  class="portfolio-link"
+                  target="_blank"
+                  title="Visit Live Site"
+                >
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item" data-aos="fade-up" data-aos-delay="200">
+            <img src="images/uni.jpg" alt="UniGram" />
+            <div class="portfolio-overlay">
+              <h3>UniGram</h3>
+              <p>
+                A collaborative platform for Ethiopian university students to
+                connect and support each other academically.
+              </p>
+              <div class="portfolio-links">
+                <a
+                  href="https://github.com/tsitiii/unigram.git"
+                  class="portfolio-link"
+                  target="_blank"
+                  title="View Source Code"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+                <a
+                  href="https://unigram-et.vercel.app/"
+                  class="portfolio-link"
+                  target="_blank"
+                  title="Visit Live Site"
+                >
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item" data-aos="fade-up" data-aos-delay="300">
+            <img src="images/library.jpg" alt="Library Management System" />
+            <div class="portfolio-overlay">
+              <h3>Library Management System</h3>
+              <p>
+                A digital library platform enabling students to discover and
+                borrow books across various genres.
+              </p>
+              <div class="portfolio-links">
+                <a
+                  href="https://github.com/tsitiii/GDSC_Library_management_project.git"
+                  class="portfolio-link"
+                  target="_blank"
+                  title="View Source Code"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+                <a
+                  href="https://library-management-system-anqa.onrender.com"
+                  class="portfolio-link"
+                  target="_blank"
+                  title="Visit Live Site"
+                >
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item" data-aos="fade-up" data-aos-delay="400">
+            <img src="images/soft.jpg" alt="Pi Parents Portal" />
+            <div class="portfolio-overlay">
+              <h3>Pi Parents Portal</h3>
+              <p>
+                A dedicated portal helping Ethiopian parents monitor and manage
+                their children's academic progress.
+              </p>
+              <div class="portfolio-links">
+                <a
+                  href="https://github.com/Softnet-PiParents-Org/Pi_Backend"
+                  class="portfolio-link"
+                  target="_blank"
+                  title="View Source Code"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+                <a
+                  href="#"
+                  class="portfolio-link"
+                  target="_blank"
+                  title="Visit Live Site"
+                >
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-cta" data-aos="fade-up">
+          <a href="#contact" class="btn">See More Projects</a>
+        </div>
+      </div>
     </section>
 
     <!-- Mobile Apps Section -->
     <section id="mobile-apps">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <h2>My Mobile Apps</h2>
-                <div class="section-line"></div>
-                <h3 class="portfolio-subtitle">Projects built for mobile devices.</h3>
-            </div>
-            <div class="mobile-apps-grid">
-                <div class="mobile-app-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="mobile-app-image">
-                        <img src="images/visit adis.jpg" alt="Visit Addis App">
-                    </div>
-                    <div class="mobile-app-content">
-                        <h3>Visit Addis</h3>
-                        <p>Your ultimate guide to exploring the vibrant city of Addis Ababa. Discover top attractions,
-                            restaurants, and events.</p>
-                        <a href="https://github.com/Visit-Addis/Visit_Addis_frontend_app" class="mobile-app-link"
-                            target="_blank" title="View on GitHub">
-                            <i class="fab fa-github"></i>
-                            <span>View on GitHub</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="mobile-app-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="mobile-app-image">
-                        <img src="images/worry.jpg" alt="WorryMate App">
-                    </div>
-                    <div class="mobile-app-content">
-                        <h3>WorryMate Ai powered worry buddy</h3>
-                        <p>WorryMate is an AI-powered worry buddy designed to help relieve day-to-day stress. It
-                            features an intelligent chatting system that provides support, encouragement, and a safe
-                            space to share your thoughts.</p>
-                        <a href="https://github.com/tsitiii/G6-WorryMate.git" class="mobile-app-link" target="_blank"
-                            title="View on GitHub">
-                            <i class="fab fa-github"></i>
-                            <span>View on GitHub</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="mobile-app-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="mobile-app-image">
-                        <img src="images/speechr.jpg" alt="Speech Translator App">
-                    </div>
-                    <div class="mobile-app-content">
-                        <h3>Speech and text Translator app</h3>
-                        <p>This app provides real-time text-to-speech and speech-to-text conversion, along with live
-                            camera video text detection. Instantly translate detected text from the camera into
-                            different languages for seamless communication.</p>
-                        <a href="https://github.com/tsitiii/speech_and_text_translator.git" class="mobile-app-link"
-                            target="_blank" title="View on GitHub">
-                            <i class="fab fa-github"></i>
-                            <span>View on GitHub</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="mobile-app-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="mobile-app-image">
-                        <img src="images/arhibu.jpg" alt="Arhibu App">
-                    </div>
-                    <div class="mobile-app-content">
-                        <h3>Arhibu - Roommate Finder</h3>
-                        <p>Connects house owners and seekers, making it easy to find the perfect roommate or room to
-                            share.</p>
-                        <a href="https://github.com/Gebeyaa/Roomate_Finder_mobile" class="mobile-app-link"
-                            target="_blank" title="View on GitHub">
-                            <i class="fab fa-github"></i>
-                            <span>View on GitHub</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="mobile-app-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="mobile-app-image">
-                        <img src="images/ecommerce.jpg" alt="E-commerce App">
-                    </div>
-                    <div class="mobile-app-content">
-                        <h3>E-commerce Fashion App</h3>
-                        <p>A mobile shopping app for clothing, allowing users to browse and purchase a variety of
-                            fashion items.</p>
-                        <a href="https://github.com/tsitiii/E-Commerce-Clothing-Store" class="mobile-app-link"
-                            target="_blank" title="View on GitHub">
-                            <i class="fab fa-github"></i>
-                            <span>View on GitHub</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2>My Mobile Apps</h2>
+          <div class="section-line"></div>
+          <h3 class="portfolio-subtitle">Projects built for mobile devices.</h3>
         </div>
+        <div class="mobile-apps-grid">
+          <div class="mobile-app-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="mobile-app-image-wrapper">
+              <div class="mobile-app-image main-image">
+                <img src="images/visit adis.jpg" alt="Visit Addis App" />
+              </div>
+              <div class="mobile-app-image accent-image">
+                <img src="images/visit adis.jpg" alt="Visit Addis App" />
+              </div>
+            </div>
+            <div class="mobile-app-content">
+              <h3>Visit Addis</h3>
+              <p>
+                Your ultimate guide to exploring the vibrant city of Addis
+                Ababa. Discover top attractions, restaurants, and events.
+              </p>
+              <a
+                href="https://github.com/Visit-Addis/Visit_Addis_frontend_app"
+                class="mobile-app-link"
+                target="_blank"
+                title="View on GitHub"
+              >
+                <i class="fab fa-github"></i>
+                <span>View on GitHub</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="mobile-app-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="mobile-app-image-wrapper">
+              <div class="mobile-app-image main-image">
+                <img src="images/worry.jpg" alt="WorryMate App" />
+              </div>
+              <div class="mobile-app-image accent-image">
+                <img src="images/worry.jpg" alt="WorryMate App" />
+              </div>
+            </div>
+            <div class="mobile-app-content">
+              <h3>Sema Ai powered worry buddy</h3>
+              <p>
+                Sema is an AI-powered worry buddy designed to help relieve
+                day-to-day stress. It features an intelligent chatting system
+                that provides support, encouragement, and a safe space to share
+                your thoughts.
+              </p>
+              <a
+                href="https://github.com/tsitiii/G6-WorryMate.git"
+                class="mobile-app-link"
+                target="_blank"
+                title="View on GitHub"
+              >
+                <i class="fab fa-github"></i>
+                <span>View on GitHub</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="mobile-app-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="mobile-app-image-wrapper">
+              <div class="mobile-app-image main-image">
+                <img srsc="images/translator.png" alt="Speech Translator App" />
+              </div>
+              <div class="mobile-app-image accent-image">
+                <img src="images/translator.png" alt="Speech Translator App" />
+              </div>
+            </div>
+            <div class="mobile-app-content">
+              <h3>Speech and text Translator app</h3>
+              <p>
+                This app provides real-time text-to-speech and speech-to-text
+                conversion, along with live camera video text detection.
+                Instantly translate detected text from the camera into different
+                languages for seamless communication.
+              </p>
+              <a
+                href="https://github.com/tsitiii/speech_and_text_translator.git"
+                class="mobile-app-link"
+                target="_blank"
+                title="View on GitHub"
+              >
+                <i class="fab fa-github"></i>
+                <span>View on GitHub</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="mobile-app-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="mobile-app-image-wrapper">
+              <div class="mobile-app-image main-image">
+                <img src="images/arhibu.jpg" alt="Arhibu App" />
+              </div>
+              <div class="mobile-app-image accent-image">
+                <img src="images/arhibu.jpg" alt="Arhibu App" />
+              </div>
+            </div>
+            <div class="mobile-app-content">
+              <h3>Arhibu - Roommate Finder</h3>
+              <p>
+                Connects house owners and seekers, making it easy to find the
+                perfect roommate or room to share.
+              </p>
+              <a
+                href="https://github.com/Gebeyaa/Roomate_Finder_mobile"
+                class="mobile-app-link"
+                target="_blank"
+                title="View on GitHub"
+              >
+                <i class="fab fa-github"></i>
+                <span>View on GitHub</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="mobile-app-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="mobile-app-image-wrapper">
+              <div class="mobile-app-image main-image">
+                <img src="images/ecommerce.jpg" alt="E-commerce App" />
+              </div>
+              <div class="mobile-app-image accent-image">
+                <img src="images/ecommerce.jpg" alt="E-commerce App" />
+              </div>
+            </div>
+            <div class="mobile-app-content">
+              <h3>E-commerce Fashion App</h3>
+              <p>
+                A mobile shopping app for clothing, allowing users to browse and
+                purchase a variety of fashion items.
+              </p>
+              <a
+                href="https://github.com/tsitiii/E-Commerce-Clothing-Store"
+                class="mobile-app-link"
+                target="_blank"
+                title="View on GitHub"
+              >
+                <i class="fab fa-github"></i>
+                <span>View on GitHub</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-
-
-
 
     <!-- Contact Section -->
     <section id="contact">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <h2>Contact Me</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="contact-content">
-                <div class="contact-info" data-aos="fade-right">
-                    <div class="contact-details">
-                        <p><i class="fa-solid fa-phone"></i> +251 944353983</p>
-                        <p><i class="fa-solid fa-envelope"></i> ziontaa9@gmail.com</p>
-                    </div>
-                    <div class="social-links">
-                        <a href="https://twitter.com/zitiii9" target="_blank"><i
-                                class="fa-brands fa-square-twitter"></i></a>
-                        <a href="mailto:ziontaa9@gmail.com"><i class="fa-solid fa-envelope-circle-check"></i></a>
-                        <a href="https://github.com/tsitiii" target="_blank"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://t.me/Yok_submissive" target="_blank"><i
-                                class="fa-regular fa-paper-plane"></i></a>
-                        <a href="https://www.linkedin.com/in/tsiyon-gashaw-0b12b92a0" target="_blank"><i
-                                class="fa-brands fa-linkedin"></i></a>
-                    </div>
-                    <a href="images/Tsiyon Gashaw.pdf" download class="btn btn2">Download CV</a>
-                </div>
-                <div class="contact-form" data-aos="fade-left">
-                    <form id="contact-form" action="https://formspree.io/f/xvgrwgrn" method="POST">
-                        <div class="form-group">
-                            <input type="text" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" name="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea name="message" placeholder="Your Message" required></textarea>
-                        </div>
-                        <button type="submit" class="btn">Send Message</button>
-                    </form>
-                    <div id="thank-you-message"
-                        style="display:none; color:var(--primary-color); font-size:1.2rem; margin-top:20px; text-align:center;">
-                        Thank you for reaching out! I will get back to you soon.
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2>Contact Me</h2>
+          <div class="section-line"></div>
         </div>
+        <div class="contact-content">
+          <div class="contact-info" data-aos="fade-right">
+            <div class="contact-details">
+              <p><i class="fa-solid fa-phone"></i> +251 944353983</p>
+              <p><i class="fa-solid fa-envelope"></i> ziontaa9@gmail.com</p>
+            </div>
+            <div class="social-links">
+              <a href="https://twitter.com/zitiii9" target="_blank"
+                ><i class="fa-brands fa-square-twitter"></i
+              ></a>
+              <a href="mailto:ziontaa9@gmail.com"
+                ><i class="fa-solid fa-envelope-circle-check"></i
+              ></a>
+              <a href="https://github.com/tsitiii" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://t.me/Yok_submissive" target="_blank"
+                ><i class="fa-regular fa-paper-plane"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/tsiyon-gashaw-0b12b92a0"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+            <a href="images/Tsiyon Gashaw.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-form" data-aos="fade-left">
+            <form
+              id="contact-form"
+              action="https://formspree.io/f/xvgrwgrn"
+              method="POST"
+            >
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  name="message"
+                  placeholder="Your Message"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn">Send Message</button>
+            </form>
+            <div
+              id="thank-you-message"
+              style="
+                display: none;
+                color: var(--primary-color);
+                font-size: 1.2rem;
+                margin-top: 20px;
+                text-align: center;
+              "
+            >
+              Thank you for reaching out! I will get back to you soon.
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-
-
     <footer class="copyright">
-        <p>© 2024 Tsiyon Gashaw. Made with <i class="fa-solid fa-heart"></i> and <i class="fa-solid fa-code"></i></p>
+      <p>
+        © 2024 Tsiyon Gashaw. Made with <i class="fa-solid fa-heart"></i> and
+        <i class="fa-solid fa-code"></i>
+      </p>
     </footer>
 
     <div class="scroll-top">
-        <i class="fas fa-arrow-up"></i>
+      <i class="fas fa-arrow-up"></i>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
-        // Initialize AOS
-        AOS.init({
-            duration: 1000,
-            once: true,
-            offset: 100
-        });
+      // Initialize AOS
+      AOS.init({
+        duration: 1000,
+        once: true,
+        offset: 100,
+      });
 
-        // Navigation scroll effect
-        window.addEventListener('scroll', function () {
-            const nav = document.getElementById('navbar');
-            if (window.scrollY > 50) {
-                nav.classList.add('scrolled');
-            } else {
-                nav.classList.remove('scrolled');
-            }
-        });
+      // Navigation scroll effect
+      window.addEventListener("scroll", function () {
+        const nav = document.getElementById("navbar");
+        if (window.scrollY > 50) {
+          nav.classList.add("scrolled");
+        } else {
+          nav.classList.remove("scrolled");
+        }
+      });
 
-        // Mobile menu functions
-        function openmenu() {
-            document.getElementById("sidebar").classList.add("active");
+      // Mobile menu functions
+      function openmenu() {
+        document.getElementById("sidebar").classList.add("active");
+      }
+
+      function closemenu() {
+        document.getElementById("sidebar").classList.remove("active");
+      }
+
+      // Tab switching
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (const tablink of tablinks) {
+          tablink.classList.remove("active-links");
+        }
+        for (const tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-links");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+
+      // Smooth scroll with offset for fixed header
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute("href");
+          const targetElement = document.querySelector(targetId);
+          const headerOffset = 80;
+          const elementPosition = targetElement.getBoundingClientRect().top;
+          const offsetPosition =
+            elementPosition + window.pageYOffset - headerOffset;
+
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth",
+          });
+        });
+      });
+
+      // Horizontal Text Animation for Hero Section
+      document.addEventListener("DOMContentLoaded", function () {
+        const dynamicText = document.getElementById("dynamicText");
+        const texts = [
+          "I build backends",
+          "I develop mobile apps",
+          "I create frontends",
+          "I design APIs",
+        ];
+        let currentIndex = 0;
+
+        function updateText() {
+          dynamicText.style.opacity = "0";
+          dynamicText.style.transform = "translateX(-20px)";
+
+          setTimeout(() => {
+            currentIndex = (currentIndex + 1) % texts.length;
+            dynamicText.textContent = texts[currentIndex];
+            dynamicText.style.opacity = "1";
+            dynamicText.style.transform = "translateX(0)";
+          }, 300);
         }
 
-        function closemenu() {
-            document.getElementById("sidebar").classList.remove("active");
+        // Start animation after initial delay
+        setTimeout(() => {
+          updateText();
+          setInterval(updateText, 3000); // Change every 3 seconds
+        }, 2000);
+      });
+
+      // Mobile Menu Toggle
+      const menuBtn = document.querySelector(".menu-btn");
+      const navLinks = document.querySelector(".nav-links");
+
+      menuBtn.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+        menuBtn.querySelector("i").classList.toggle("fa-bars");
+        menuBtn.querySelector("i").classList.toggle("fa-times");
+      });
+
+      // Close mobile menu when clicking outside
+      document.addEventListener("click", (e) => {
+        if (!navLinks.contains(e.target) && !menuBtn.contains(e.target)) {
+          navLinks.classList.remove("active");
+          menuBtn.querySelector("i").classList.add("fa-bars");
+          menuBtn.querySelector("i").classList.remove("fa-times");
         }
+      });
 
-        // Tab switching
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
+      // Loading Animation
+      window.addEventListener("load", () => {
+        const loading = document.querySelector(".loading");
+        loading.classList.add("hidden");
+      });
 
-        function opentab(tabname) {
-            for (const tablink of tablinks) {
-                tablink.classList.remove("active-links");
-            }
-            for (const tabcontent of tabcontents) {
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-links");
-            document.getElementById(tabname).classList.add("active-tab");
+      // Scroll to Top Button
+      const scrollTop = document.querySelector(".scroll-top");
+
+      window.addEventListener("scroll", () => {
+        if (window.pageYOffset > 300) {
+          scrollTop.classList.add("visible");
+        } else {
+          scrollTop.classList.remove("visible");
         }
+      });
 
-        // Smooth scroll with offset for fixed header
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-                const headerOffset = 80;
-                const elementPosition = targetElement.getBoundingClientRect().top;
-                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-                window.scrollTo({
-                    top: offsetPosition,
-                    behavior: 'smooth'
-                });
-            });
+      scrollTop.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
         });
+      });
 
-        // Add this to your existing script section
-        document.addEventListener('DOMContentLoaded', function () {
-            // Typing animation for name
-            const name = "Tsiyon Gashaw";
-            const typingText = document.querySelector('.typing-text');
-            let i = 0;
-
-            function typeName() {
-                if (i < name.length) {
-                    typingText.textContent += name.charAt(i);
-                    i++;
-                    setTimeout(typeName, 150);
+      document.addEventListener("DOMContentLoaded", function () {
+        const form = document.getElementById("contact-form");
+        const thankYou = document.getElementById("thank-you-message");
+        if (form) {
+          form.addEventListener("submit", function (e) {
+            e.preventDefault();
+            const data = new FormData(form);
+            fetch(form.action, {
+              method: "POST",
+              body: data,
+              headers: { Accept: "application/json" },
+            })
+              .then((response) => {
+                if (response.ok) {
+                  form.reset();
+                  form.style.display = "none";
+                  thankYou.style.display = "block";
                 } else {
-                    // Start tech stack animation after name is typed
-                    setTimeout(showTechStack, 500);
+                  thankYou.innerHTML =
+                    "Oops! There was a problem. Please try again later.";
+                  thankYou.style.display = "block";
                 }
-            }
-
-            // Tech stack animation
-            const techItems = document.querySelectorAll('.tech-item');
-            let currentTech = 0;
-
-            function showTechStack() {
-                techItems.forEach((item, index) => {
-                    if (index === currentTech) {
-                        item.classList.add('active');
-                    } else {
-                        item.classList.remove('active');
-                    }
-                });
-
-                currentTech = (currentTech + 1) % techItems.length;
-                setTimeout(showTechStack, 2000); // Change tech stack every 2 seconds
-            }
-
-            // Start the animation
-            setTimeout(typeName, 1000);
-        });
-
-        // Mobile Menu Toggle
-        const menuBtn = document.querySelector('.menu-btn');
-        const navLinks = document.querySelector('.nav-links');
-
-        menuBtn.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            menuBtn.querySelector('i').classList.toggle('fa-bars');
-            menuBtn.querySelector('i').classList.toggle('fa-times');
-        });
-
-        // Close mobile menu when clicking outside
-        document.addEventListener('click', (e) => {
-            if (!navLinks.contains(e.target) && !menuBtn.contains(e.target)) {
-                navLinks.classList.remove('active');
-                menuBtn.querySelector('i').classList.add('fa-bars');
-                menuBtn.querySelector('i').classList.remove('fa-times');
-            }
-        });
-
-        // Loading Animation
-        window.addEventListener('load', () => {
-            const loading = document.querySelector('.loading');
-            loading.classList.add('hidden');
-        });
-
-        // Scroll to Top Button
-        const scrollTop = document.querySelector('.scroll-top');
-
-        window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 300) {
-                scrollTop.classList.add('visible');
-            } else {
-                scrollTop.classList.remove('visible');
-            }
-        });
-
-        scrollTop.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-
-        document.addEventListener('DOMContentLoaded', function () {
-            const form = document.getElementById('contact-form');
-            const thankYou = document.getElementById('thank-you-message');
-            if (form) {
-                form.addEventListener('submit', function (e) {
-                    e.preventDefault();
-                    const data = new FormData(form);
-                    fetch(form.action, {
-                        method: 'POST',
-                        body: data,
-                        headers: { 'Accept': 'application/json' }
-                    }).then(response => {
-                        if (response.ok) {
-                            form.reset();
-                            form.style.display = 'none';
-                            thankYou.style.display = 'block';
-                        } else {
-                            thankYou.innerHTML = 'Oops! There was a problem. Please try again later.';
-                            thankYou.style.display = 'block';
-                        }
-                    }).catch(() => {
-                        thankYou.innerHTML = 'Oops! There was a problem. Please try again later.';
-                        thankYou.style.display = 'block';
-                    });
-                });
-            }
-        });
+              })
+              .catch(() => {
+                thankYou.innerHTML =
+                  "Oops! There was a problem. Please try again later.";
+                thankYou.style.display = "block";
+              });
+          });
+        }
+      });
     </script>
-
-</body>
-
+  </body>
 </html>
