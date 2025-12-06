@@ -1,0 +1,404 @@
+/* Universal Responsive Fixes */
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 0 8px !important;
+    }
+
+    .header-text,
+    .about-content,
+    .services-grid,
+    .portfolio-grid,
+    .contact-content {
+        padding: 0 4px !important;
+        margin: 0 !important;
+        max-width: 100vw !important;
+    }
+
+    .about-content,
+    .services-grid,
+    .portfolio-grid,
+    .contact-content {
+        flex-direction: column !important;
+        grid-template-columns: 1fr !important;
+        gap: 12px !important;
+    }
+
+    .about-left,
+    .about-right {
+        width: 100% !important;
+        min-width: 0 !important;
+    }
+
+    .portfolio-item {
+        min-width: 0 !important;
+        width: 100% !important;
+        max-width: 100vw !important;
+    }
+
+    .portfolio-overlay {
+        padding: 10px !important;
+        font-size: 0.95rem !important;
+    }
+
+    .portfolio-overlay h3 {
+        font-size: 1rem !important;
+        padding: 6px 0 !important;
+    }
+
+    .portfolio-overlay p {
+        font-size: 0.85rem !important;
+    }
+
+    .portfolio-links {
+        gap: 10px !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+    }
+
+    .portfolio-link {
+        width: 32px !important;
+        height: 32px !important;
+        font-size: 0.9rem !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        background: var(--primary-color) !important;
+        color: #fff !important;
+        border-radius: 50% !important;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12) !important;
+    }
+
+    .portfolio-link i {
+        font-size: 1.1rem !important;
+        color: #fff !important;
+    }
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 1024px) {
+    :root {
+        --section-padding: 80px 0;
+    }
+
+    .header-text h1 {
+        font-size: 3.5rem;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    #mobile-apps .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 0 15px;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        max-width: 900px;
+    }
+
+    .portfolio-item {
+        min-height: 300px;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .about-left {
+        flex-direction: row;
+    }
+
+    .about-card {
+        flex: 1;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    :root {
+        --section-padding: 60px 0;
+    }
+
+    .header-text {
+        padding: 60px 20px;
+    }
+
+    .header-text h1 {
+        font-size: 3rem;
+    }
+
+    .header-text p {
+        font-size: 1.5rem;
+    }
+
+    .tech-item {
+        font-size: 1.1rem;
+        padding: 6px 20px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+    }
+
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-links {
+        gap: 12px;
+    }
+
+    .portfolio-link {
+        width: 45px;
+        height: 45px;
+    }
+
+    .portfolio-link i {
+        font-size: 1.3rem;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        gap: 25px;
+    }
+
+    .portfolio-item {
+        min-height: 280px;
+    }
+
+    .service-card {
+        padding: 25px;
+    }
+
+    .service-card i {
+        font-size: 2.2rem;
+    }
+
+    .service-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .about-left {
+        flex-direction: column;
+    }
+
+    .about-stats {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .tab-titles {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .tab-links::after {
+        bottom: -5px;
+    }
+
+    /* Navigation */
+    #navbar {
+        padding: 15px 0;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        max-width: 300px;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.95);
+        backdrop-filter: blur(10px);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        transition: var(--transition);
+        box-shadow: -5px 0 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-links a {
+        font-size: 1.2rem;
+    }
+
+    #header {
+        padding-top: 80px;
+    }
+
+    /* Typing Animation */
+    .typing-text {
+        font-size: 2.5rem;
+        min-height: 3rem;
+    }
+
+    .tech-item {
+        font-size: 1.2rem;
+    }
+
+    .static-text {
+        font-size: 1.2rem;
+    }
+
+    /* Portfolio */
+    .portfolio-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+    }
+
+    .portfolio-overlay {
+        padding: 20px;
+    }
+
+    .portfolio-overlay h3 {
+        font-size: 1.2rem;
+    }
+
+    .portfolio-overlay p {
+        font-size: 0.9rem;
+    }
+
+    .portfolio-link {
+        width: 38px;
+        height: 38px;
+        font-size: 1rem;
+    }
+
+    /* Mobile Apps */
+    #mobile-apps .portfolio-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    #mobile-apps .portfolio-item img {
+        height: 220px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #mobile-apps .portfolio-item img {
+        height: 360px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    :root {
+        --section-padding: 40px 0;
+    }
+
+    .header-text {
+        padding: 40px 20px;
+    }
+
+    .header-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .header-text p {
+        font-size: 1.25rem;
+    }
+
+    .tech-item {
+        font-size: 1rem;
+        padding: 6px 16px;
+    }
+
+    .service-card,
+    .contact-info {
+        padding: 30px 20px;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .portfolio-links {
+        gap: 10px;
+    }
+
+    .portfolio-link {
+        width: 40px;
+        height: 40px;
+    }
+
+    .portfolio-link i {
+        font-size: 1.2rem;
+    }
+
+    .portfolio-item {
+        min-height: 300px;
+    }
+
+    .nav-links {
+        width: 100%;
+        max-width: none;
+    }
+
+    .scroll-top {
+        bottom: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .btn {
+        padding: 12px 30px;
+        font-size: 1rem;
+    }
+
+    /* Typing Animation */
+    .typing-text {
+        font-size: 2rem;
+        min-height: 2.5rem;
+    }
+
+    .tech-item {
+        font-size: 1rem;
+    }
+
+    .static-text {
+        font-size: 1rem;
+    }
+
+    /* Portfolio */
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-overlay {
+        padding: 15px;
+    }
+
+    .portfolio-link {
+        width: 35px;
+        height: 35px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Ensure sections don't hide behind navbar */
+section {
+    position: relative;
+    z-index: 1;
+}

@@ -1,0 +1,46 @@
+/* Mobile Apps Section */
+#mobile-apps {
+    padding: var(--section-padding);
+    background: var(--bg-color);
+    /* Matches the main background */
+}
+
+#mobile-apps .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+}
+
+#mobile-apps .portfolio-item {
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    position: relative;
+    border-radius: var(--border-radius);
+    box-shadow: var(--card-shadow);
+    background: var(--card-bg);
+}
+
+#mobile-apps .portfolio-item img {
+    width: 100%;
+    height: 520px;
+    object-fit: contain;
+    background: #fff;
+    border-bottom: 1px solid var(--border-color);
+    border-radius: 18px 18px 0 0;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.10);
+    transition: var(--transition);
+}
+
+#mobile-apps .portfolio-links a {
+    background: #000;
+    /* Black background for app store buttons */
+    border: 2px solid var(--text-secondary);
+}
+
+#mobile-apps .portfolio-links a:hover {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+}
