@@ -285,21 +285,6 @@
         font-size: 1rem;
     }
 
-    /* Mobile Apps */
-    #mobile-apps .portfolio-grid {
-        grid-template-columns: 1fr;
-        gap: 28px;
-    }
-
-    #mobile-apps .portfolio-item img {
-        height: 220px;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    #mobile-apps .portfolio-item img {
-        height: 360px;
-    }
 }
 
 @media only screen and (max-width: 480px) {
